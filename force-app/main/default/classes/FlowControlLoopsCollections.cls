@@ -137,7 +137,7 @@ public with sharing class FlowControlLoopsCollections {
      * @return The grade for the given score.
      */
     public static String determineGrade(Integer score) {
-         if (score == null) {
+        if (score == null) {
             return null;
         } else if (score >= 90) {
             return 'A';
@@ -161,10 +161,10 @@ public with sharing class FlowControlLoopsCollections {
      * @return The sum of all integers up to the limit.
      */
     public static Integer sumUpToLimit(Integer intLimit) {
-         Integer totalValue = 0;
+        Integer totalValue = 0;
         for (Integer i=1; i<=intLimit; i++){
             totalValue = totalValue + i;
-         }
+        }
 
         return totalValue; 
     }
