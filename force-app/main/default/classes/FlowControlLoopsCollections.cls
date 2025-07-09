@@ -199,17 +199,17 @@ public with sharing class FlowControlLoopsCollections {
      */
     public static String repeatString(String inputString, Integer repeatCount) {
         // Initialize the result String
+        String greetingMessage = '';
 
         // Use a for loop to append the inputString to the result string repeatCount times
-        /*
-        for () {
-
+        for (Integer i=1; i<=repeatCount; i++) {
+            greetingMessage = greetingMessage + inputString;
             // If it is not the last iteration, add a semicolon to separate the strings
+            if (i<repeatCount) {
+                greetingMessage = greetingMessage + '; ';
+            }
         }
-        */
-
-        // Return the final result string
-        return null; // Replace null with the variable you used to store the result
+        return greetingMessage;
     }
 
     /**
