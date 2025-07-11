@@ -290,12 +290,18 @@ public with sharing class FlowControlLoopsCollections {
      */
     public static Integer sumPositiveIntegers() {
         List<Integer> numbers = new List<Integer>{-1, 2, -3, 4, -5, 6}; //DO NOT CHANGE
+        Integer numbersSum = 0;
 
-        // Loop through the list of integers
-            // if the number is negative skip this iteration
-        
-
-        return null; // Replace null with the variable you used to store the result
+        // Loop through the list of integers. if the number is negative skip this iteration. If not, add the number to the total sum of numbers
+        for (Integer currentNumber : numbers) {
+            if (currentNumber <1) {
+                continue;
+            } else {
+                numbersSum += currentNumber;
+            }
+        }
+    
+        return numbersSum; 
     }
 
     /**
