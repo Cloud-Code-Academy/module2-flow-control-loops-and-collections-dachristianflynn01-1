@@ -163,7 +163,7 @@ public with sharing class FlowControlLoopsCollections {
     public static Integer sumUpToLimit(Integer intLimit) {
         Integer totalValue = 0;
         for (Integer i=1; i<=intLimit; i++){
-            totalValue = totalValue + i;
+            totalValue += i;
         }
 
         return totalValue; 
