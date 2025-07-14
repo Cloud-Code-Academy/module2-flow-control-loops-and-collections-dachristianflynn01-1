@@ -181,7 +181,7 @@ public with sharing class FlowControlLoopsCollections {
 
         // Use a for loop to append 'Hello World!;' to the result string three times
          for (Integer i=1; i<4; i++){
-            helloMessage = helloMessage + 'Hello World!; ';
+            helloMessage += 'Hello World!; ';
         }
 
         return helloMessage;
@@ -203,10 +203,10 @@ public with sharing class FlowControlLoopsCollections {
 
         // Use a for loop to append the inputString to the result string repeatCount times
         for (Integer i=1; i<=repeatCount; i++) {
-            greetingMessage = greetingMessage + inputString;
+            greetingMessage += inputString;
             // If it is not the last iteration, add a semicolon to separate the strings
             if (i<repeatCount) {
-                greetingMessage = greetingMessage + '; ';
+                greetingMessage += '; ';
             }
         }
         return greetingMessage;
