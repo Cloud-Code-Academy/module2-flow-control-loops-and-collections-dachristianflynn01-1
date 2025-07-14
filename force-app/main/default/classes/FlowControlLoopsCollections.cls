@@ -367,15 +367,16 @@ public with sharing class FlowControlLoopsCollections {
      */
     public static Map<String, Integer> addItemsToMap() {
         // Initialize an empty Map
+        Map<String,Integer> fruitQuantityMap = new Map<String,Integer>();
 
         // Add key-value pairs to the Map
-        // add Apples => 5
-        // add Oranges => 10
-        // add Bananas => 15
-        // add Pears => 20
-        // add Grapes => 25
+        fruitQuantityMap.put('Apples', 5);
+        fruitQuantityMap.put('Oranges', 10);
+        fruitQuantityMap.put('Bananas', 15);
+        fruitQuantityMap.put('Pears', 20);
+        fruitQuantityMap.put('Grapes', 25);
 
-        return null; // Replace null with the variable you used to store the result
+        return fruitQuantityMap;
     }
 
     /**
